@@ -1,0 +1,143 @@
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.page {
+    font-family: 'Lato', sans-serif;
+}
+
+.page__header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: relative;
+    background: radial-gradient(circle, rgba(238, 174, 202, 0.01579560697748414) 0%, rgba(148, 187, 233, 0.09231246091006845) 100%);
+}
+
+.page__header::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    width: 800px;
+    height: 1px;
+    background-color: rgb(0, 59, 119);
+}
+
+.contacts {
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    line-height: 1.5;
+}
+
+.contacts__items {
+    margin-top: 1rem;
+    text-align: right;
+}
+
+.contacts-birth {
+    margin-top: auto;
+    text-align: right;
+}
+
+.about {
+    padding: 1rem;
+}
+
+.about-img {
+    margin-bottom: 1rem;
+    border-radius: 50%;
+}
+
+.page__main {
+    background: radial-gradient(circle, rgba(238, 174, 202, 0.11579560697748414) 0%, rgba(148, 187, 233, 0.15231246091006845) 100%);
+    padding: 1rem;
+}
+
+.skills-list {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    flex: 1 1 auto;
+}
+
+.list-item {
+    padding: 1rem;
+    box-sizing: border-box;
+    width: 33%;
+    height: 3rem;
+    background-color: rgba(0, 59, 119, 0.5);
+    font-size: 1.1em;
+    color: #ffffff;
+    text-align: center;
+}
+
+.list-item:nth-child(2n) {
+    background-color: rgba(0, 59, 119, 0.7);
+}
+
+.page__works {
+    background-color: rgba(0, 59, 119, 0.5);
+    font-size: 1.5em;
+    text-align: center;
+    color: #ffffff;
+    overflow: hidden;
+}
+
+.page__works a {
+    padding: 10px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #ffffff;
+    background-color: rgba(0, 182, 143, 0.664);
+    border-radius: 50%;
+}
+
+.works-images {
+    max-height: 680px;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.images-item {
+    margin: 0;
+    padding: 0;
+    line-height: 0;
+}
+
+.images-item:hover {
+    transform: scale(1.5);
+}
+
+h1 {
+    margin: 0;
+    font-size: 1.5em;
+    color: rgb(0, 59, 119);
+}
+
+h2 {
+    font-size: 1.3em;
+    color: rgb(0, 59, 119);
+}
+
+ul {
+    list-style-type: square;
+}
+
+p, ul, span {
+    margin: 3px;
+    padding: 0;
+    font-size: 1.1em;
+}
+
+p, li, {
+    line-height: 1.5;
+}
