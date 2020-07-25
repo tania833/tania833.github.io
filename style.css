@@ -86,7 +86,6 @@
     font-size: 1.5em;
     text-align: center;
     color: #ffffff;
-    overflow: hidden;
 }
 
 .page__works a {
@@ -96,6 +95,10 @@
     color: #ffffff;
     background-color: rgba(0, 182, 143, 0.664);
     border-radius: 50%;
+}
+
+.works-link {
+    overflow: hidden;
 }
 
 .works-images {
