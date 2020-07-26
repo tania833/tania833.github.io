@@ -133,7 +133,7 @@
     width: 100%;
 }
 
-.hidden{
+.hidden {
     display: inline;
 }
 
@@ -187,14 +187,16 @@ p, li, {
     h2 {
         font-size: 2.3em;
     }
-    p, ul, span, a {
+    p, ul, span, {
         font-size: 2.1em;
     }
-
-    .list-item{
+    .contacts-link {
+        font-size: 2.1em;
+    }
+    .list-item {
         height: 7rem;
     }
-    .hidden{
+    .hidden {
         display: none;
     }
 }
