@@ -10,6 +10,7 @@
 .page__header {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     justify-content: space-between;
     position: relative;
     background: radial-gradient(circle, rgba(238, 174, 202, 0.01579560697748414) 0%, rgba(148, 187, 233, 0.09231246091006845) 100%);
@@ -163,8 +164,20 @@ p, li, {
 }
 
 @media (max-width:800px) {
-    .container{
-        width: max-content;
+    .about{
+        margin: 0 auto;
+    }
+    
+    .contacts{
+        margin: 0 auto;
+    }
+    .contacts__items{
+        text-align: center;
+    }
+
+    .contacts-birth{
+        margin-top: 1em;
+        text-align: center;
     }
     .images-item {
         width: 100%;
@@ -183,17 +196,6 @@ p, li, {
     }
     main {
         word-wrap: normal;
-        font-size: 2.1em;
-    }
-    .about {
-        font-size: 2.5em;
-    }
-    .contacts-link {
-        font-size: 2.1em;
-    }
-
-    .list-item {
-        height: 7rem;
     }
     .hidden {
         display: none;
