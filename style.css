@@ -164,19 +164,17 @@ p, li, {
 }
 
 @media (max-width:800px) {
-    .about{
+    .about {
         margin: 0 auto;
     }
-    
-    .contacts{
+    .contacts {
         margin: 0 auto;
     }
-    .contacts__items{
+    .contacts__items {
         text-align: center;
     }
-
-    .contacts-birth{
-        margin-top: 1em;
+    .contacts-birth {
+        /* margin-top: 1em; */
         text-align: center;
     }
     .images-item {
@@ -190,6 +188,7 @@ p, li, {
     }
     .images-item1 {
         height: 100%;
+        487
     }
     .works-images {
         height: auto;
@@ -199,5 +198,10 @@ p, li, {
     }
     .hidden {
         display: none;
+    }
+    @media (max-width: 485px) {
+        .contacts-birth {
+            margin-top: 1em;
+        }
     }
 }
