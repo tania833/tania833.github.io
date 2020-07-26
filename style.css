@@ -1,5 +1,5 @@
 .container {
-    max-width: 800px;
+    width: 800px;
     margin: 0 auto;
 }
 
@@ -19,7 +19,7 @@
     content: '';
     position: absolute;
     bottom: 0;
-    width: 800px;
+    width: 100%;
     height: 1px;
     background-color: rgb(0, 59, 119);
 }
@@ -102,23 +102,30 @@
 }
 
 .works-images {
-    max-height: 680px;
+    height: 677px;
     margin: 0;
     padding: 0;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
+    flex: 1 1 auto;
 }
 
-.images-item {
+.images-item, .images-item1 {
     margin: 0;
     padding: 0;
     line-height: 0;
 }
 
-.images-item:hover {
-    transform: scale(1.5);
+.images-item img{
+    width: 400px;
+    height: 225px;
 }
+
+.images-item1 img{
+    width: 400px;
+}
+
 
 h1 {
     margin: 0;
