@@ -5,9 +5,10 @@
 
 .page {
     font-family: 'Lato', sans-serif;
+    font-size: 1.1em;
 }
 
-.page__header {
+.page-header {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -16,7 +17,7 @@
     background: radial-gradient(circle, rgba(238, 174, 202, 0.01579560697748414) 0%, rgba(148, 187, 233, 0.09231246091006845) 100%);
 }
 
-.page__header::after {
+.page-header::after {
     content: '';
     position: absolute;
     bottom: 0;
@@ -25,25 +26,24 @@
     background-color: rgb(0, 59, 119);
 }
 
-.contacts {
-    padding: 1rem;
+.contacts-list {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     line-height: 1.5;
+    text-align: right;
 }
 
-.contacts__items {
+.header-contacts {
+    padding: 1rem;
     margin-top: 1rem;
-    text-align: right;
 }
 
 .contacts-birth {
-    margin-top: auto;
-    text-align: right;
+    margin-top: 50%;
 }
 
-.about {
+.header-about {
     padding: 1rem;
 }
 
@@ -52,7 +52,7 @@
     border-radius: 50%;
 }
 
-.page__main {
+.page-main {
     background: radial-gradient(circle, rgba(238, 174, 202, 0.11579560697748414) 0%, rgba(148, 187, 233, 0.15231246091006845) 100%);
     padding: 1rem;
 }
@@ -78,20 +78,21 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    line-height: 1.5;
 }
 
 .list-item:nth-child(2n) {
     background-color: rgba(0, 59, 119, 0.7);
 }
 
-.page__works {
+.page-works {
     background-color: rgba(0, 59, 119, 0.5);
     font-size: 1.5em;
     text-align: center;
     color: #ffffff;
 }
 
-.page__works a {
+.page-works a {
     padding: 10px;
     font-weight: bold;
     text-decoration: none;
@@ -144,37 +145,28 @@ h1 {
     color: rgb(0, 59, 119);
 }
 
-h2 {
+.title {
     font-size: 1.3em;
     color: rgb(0, 59, 119);
 }
 
-ul {
-    list-style-type: square;
-}
-
-p, ul, span {
+.skills-list, span {
     margin: 3px;
     padding: 0;
-    font-size: 1.1em;
 }
 
-p, li, {
-    line-height: 1.5;
-}
 
 @media (max-width:800px) {
-    .about {
+    .header-about {
         margin: 0 auto;
     }
-    .contacts {
+    .header-contacts {
         margin: 0 auto;
     }
-    .contacts__items {
+    .contacts-list {
         text-align: center;
     }
     .contacts-birth {
-        /* margin-top: 1em; */
         text-align: center;
     }
     .images-item {
@@ -188,12 +180,11 @@ p, li, {
     }
     .images-item1 {
         height: 100%;
-        487
     }
     .works-images {
         height: auto;
     }
-    main {
+    .page-main {
         word-wrap: normal;
     }
     .hidden {
